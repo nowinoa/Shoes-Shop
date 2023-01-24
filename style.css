@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
     --font-t: 'Bitter', serif;
     --font-logo: 'Aboreto', cursive;
+    --font-m: 'Poppins', sans-serif;
+
 }
 .bg{
     margin: 0;
             width: 100%;
             height: 100vh;
             background: linear-gradient(to right, white 0%, white 51.5%, black 50%, black 100%);
+}
+body {
+    height: 300vh;
 }
 /* Header */
 header {
@@ -117,4 +123,50 @@ header .logo span {
 .best-sels-sh img {
     width: 70%;
     margin: 30px 0px 15px 0px;
+}
+/* contact */
+.contact {
+    background-color: #fff;
+    padding: 90px 20px 0px 90px;
+    display: flex;
+    justify-content: space-evenly
+}
+.contact h3 {
+    font-family: var(--font-t);
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.contact-us-txt {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
+    margin-right: 0;
+    margin-left: 50px;
+    background-color: black;
+    color: rgba(233, 229, 229, 0.904);
+}
+form label {
+    font-family: var(--font-m);
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+form input, textarea {
+    width: 70%;
+    background-color: rgba(121, 120, 120, 0.096);
+    border: none;
+    border-radius: 3px;
+    height: 10%;
+
 }
